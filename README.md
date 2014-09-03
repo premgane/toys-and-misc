@@ -1,4 +1,4 @@
-prem-toys-and-misc
+toys-and-misc
 ==================
 
 A general repo
