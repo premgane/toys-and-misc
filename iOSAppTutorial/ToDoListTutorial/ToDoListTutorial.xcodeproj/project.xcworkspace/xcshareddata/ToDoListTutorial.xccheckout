@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>560A4C5E-5714-4904-8EF7-3879DD2D6813</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F578E58C54D739E87B10D0F11F497EE314678E20</key>
+		<string>https://github.com/premgane/toys-and-misc.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOSAppTutorial/ToDoListTutorial/ToDoListTutorial.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F578E58C54D739E87B10D0F11F497EE314678E20</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/premgane/toys-and-misc.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F578E58C54D739E87B10D0F11F497EE314678E20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F578E58C54D739E87B10D0F11F497EE314678E20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>toys-and-misc</string>
+		</dict>
+	</array>
+</dict>
+</plist>
