@@ -8,6 +8,9 @@ alias ls="ls -Fa"
 alias lsl="ls -Fal"
 alias sl="ls"
 
+# Assuming it's not Sublime Text 2
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
 # Display one column with matches in tab-completion
 bind "set completion-display-width 1"
 
@@ -33,6 +36,13 @@ if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [ -z "$INSIDE_EMACS" ]; then
 fi
 
 PROMPT_COMMAND='update_terminal_cwd; echo -ne "\033]0; ${PWD##*/}\007"'
+
+# Git TAB-completion
+# Requires https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+# git-completion source: https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
 
 # Java env vars
 export JAVA_HOME=$(/usr/libexec/java_home)
