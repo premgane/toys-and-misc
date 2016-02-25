@@ -8,6 +8,9 @@ alias ls="ls -Fa"
 alias lsl="ls -Fal"
 alias sl="ls"
 
+# Requires: https://github.com/nvbn/thefuck
+eval $(thefuck --alias wups)
+
 # Assuming it's not Sublime Text 2
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
