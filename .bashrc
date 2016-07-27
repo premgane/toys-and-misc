@@ -3,13 +3,16 @@ export PATH=$PATH:/Users/prem/Desktop/Development/Android/platform-tools:$GOPATH
 export UIMA_HOME=/Users/prem/Desktop/Development/uima/apache-uima
 export CLICOLOR=1
 
-alias gits="git status"
+alias gits="git branch -v; printf \"\n\"; gs || git status"
 alias ls="ls -Fa"
 alias lsl="ls -Fal"
 alias sl="ls"
 
 # Requires: https://github.com/nvbn/thefuck
 eval $(thefuck --alias wups)
+
+# https://github.com/mroth/scmpuff
+eval "$(scmpuff init -s)"
 
 # Assuming it's not Sublime Text 2
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
