@@ -40,7 +40,7 @@ eval "$(scmpuff init -s)"
 # Assuming it's not Sublime Text 2
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
-# Tab should say the current pwd, not just "bash"
+# Tab should say the current pwd, not just "zsh"
 settitle() { printf "\e]0;$@\a" }
 dir_in_title() { settitle $PWD }
 chpwd_functions=(dir_in_title)
