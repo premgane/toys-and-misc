@@ -41,17 +41,9 @@ eval "$(scmpuff init -s)"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Tab should say the current pwd, not just "bash"
-#if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [ -z "$INSIDE_EMACS" ]; then
-    update_terminal_cwd() {
-        # Identify the directory using a "file:" scheme URL,
-        # including the host name to disambiguate local vs.
-        # remote connections. Percent-escape spaces.
-        local SEARCH=' '
-        local REPLACE='%20'
-        local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
-        printf '\e]7;%s\a' "$PWD_URL"
-    }
-#fi
+settitle() { printf "\e]0;$@\a" }
+dir_in_title() { settitle $PWD }
+chpwd_functions=(dir_in_title)
 
 # root prompt
 [ $UID = 0 ] && export PROMPT=$'%{\e[0;31m%}[%{\e[0m%}%n:%{\e[0m%}%~%{\e[0;31m%}]%{\e[0m%}%# '
