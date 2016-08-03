@@ -8,6 +8,13 @@ alias ls="ls -Fa"
 alias lsl="ls -Fal"
 alias sl="ls"
 
+# https://github.com/tldr-pages/tldr-python-client
+export TLDR_COLOR_BLANK="white"
+export TLDR_COLOR_NAME="cyan"
+export TLDR_COLOR_DESCRIPTION="white"
+export TLDR_COLOR_EXAMPLE="green"
+export TLDR_COLOR_COMMAND="white"
+
 # Requires: https://github.com/nvbn/thefuck
 eval $(thefuck --alias wups)
 
